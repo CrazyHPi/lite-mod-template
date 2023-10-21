@@ -2,7 +2,7 @@
     "required": true,
     "minVersion": "0.5.3",
     "package": "xyz.crazyh.litemodtemplate.mixin",
-    "refmap": "mixins.example.refmap.json",
+    "refmap": "mixins.litemodtemplate.refmap.json",
     "mixins": [
         "MixinMinecraft"
     ],

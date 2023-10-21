@@ -50,7 +50,7 @@ configFile.withReader {
 
 group = 'xyz.crazyh'
 version = project.mod_version
-archivesBaseName = 'LiteModTemplate'
+archivesBaseName = project.mod_name
 
 minecraft {
     // these values are defined in the gradle.properties file, so that this file does not need to be altered
@@ -66,7 +66,7 @@ dependencies {
 sourceSets {
     main {
         // Refmap declaration must match the refmap name specified in the json config
-        ext.refMap = "mixins.example.refmap.json"
+        ext.refMap = "mixins.litemodtemplate.refmap.json"
     }
 }
 
@@ -86,7 +86,7 @@ litemod {
         // Uncomment any of the following lines and fill in your own details as required
         //requiredAPIs = [ 'someapi' ]
         //tweakClass = 'name.of.tweaker.here'
-        dependsOn = ['malilib']
+        //dependsOn = ['malilib']
         mixinConfigs = [ 'mixins.' + config.mod_id + '.json' ]
     }
 }
