@@ -1,10 +1,10 @@
 {
     "required": true,
     "minVersion": "0.5.3",
-    "package": "com.examplemod.mixin",
+    "package": "xyz.crazyh.litemodtemplate.mixin",
     "refmap": "mixins.example.refmap.json",
     "mixins": [
-        "MixinGuiMainMenu"
+        "MixinMinecraft"
     ],
     "injectors": {
         "defaultRequire": 1
